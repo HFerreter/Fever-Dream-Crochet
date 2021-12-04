@@ -1,0 +1,322 @@
+/*This is my 377 FoCo Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 377 FoCo Web Page Project ------------ */
+
+/* List below are the hex codes of my color palette
+MiddleBlue= #6699CC
+LightBlue= #C6DCE6
+DarkBlue= #253068
+Maroon= #982068
+LightPink= #F7A8AE*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(102, 153, 204, 0.7)), url(images/yarn-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
+.center {
+    width: 620px;
+	padding: 2%;
+    margin: 100px auto;
+ 	background: #f3f7f8ee; /*this uses opacity of 75% for the background color*/
+	text-align: center;
+	/*border: 4px dashed white;*/
+	margin-top: 8em;
+}
+
+   
+#logo {
+    margin-bottom: 50px;
+	/*border: 3px dashed rgb(59, 39, 94);*/
+	text-align: center;
+}
+
+h1 {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'lato', sans-serif;
+	font-size: 2em;
+	font-weight: 800;
+    margin: 0px auto 10px auto;
+    color: #253068;
+	line-height: 1.7em;
+}
+
+h2 {
+	 /* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	 font-family: 'lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+    line-height: 1.4;
+    color: #253068;
+    padding: 0px 0px;
+    margin: 0px auto 25px auto;
+}
+
+p {
+	/* FONT-FAMILY GOES HERE CHOOSE FROM TYPEKIT OR GOOGLE FONTS */
+	font-family: 'lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+    line-height: 1.6;
+    color: #253068;
+}
+
+nav {
+	font-family: 'lato', sans-serif;
+	font-size: 1.2em;
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+
+	background-color: seashell;
+	text-align: center;
+	position:fixed;
+	top:0px;
+	right:0px;
+	
+}
+    
+nav li {
+	display: inline;
+	
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+	color: #982068;
+	text-decoration: none;
+	font-weight: bold;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: rgb(29, 30, 32);
+	background: #b5bbda;
+}
+/*
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: seashell;
+	overflow: hidden;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	box-shadow: 0 3px 10px #969696;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+	float: right;
+	color: #253068;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'lato', sans-serif;
+	font-size: 1.1em;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+	background-color: #F7A8AE;
+	color: black;
+  }
+  
+  /* Add a color to the active/current link 
+  .topnav a.active {
+	background-color: #04AA6D;
+	color: white; 
+  }
+
+
+/* Code for cards */
+
+/* sets everything to zero */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  img {
+    display: block;
+    max-width: 100%; /* makes image responsive if needed but makes sure it doesn't stretch */
+  }
+ 
+  /* make the Section class cards here.  */
+ 
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+ 
+  /* make the card flex. The default is row so change flex direction to vertical. */
+  .card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 0 0 2px 5px rgba(0, 0, 0, 0.1);
+    top: 0;
+  }
+  .card:hover {
+    transition: all 0.1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .cardphoto {
+    max-height: 290px;
+    overflow: hidden;
+	position: center;
+	
+  }
+ 
+  .cardarticle {
+    padding: 2.2rem;
+    flex-grow: 1;
+  }
+ 
+  /* typography */
+  .cardH1 {
+    font-size: 2rem;
+	font-family: lato;
+    margin: 0;
+    color: rgb(90, 90, 90);
+	margin-bottom: 1rem;
+  }
+ 
+  .card p {
+    font-size: 1rem;
+	font-family: lato;
+    line-height: 1.5;
+	color: rgb(95, 95, 95);
+	list-style-type: none;
+	text-decoration: none;
+  }
+
+  .card p a {
+	list-style-type: none;
+	color: #141e29;
+
+  }
+ 
+  .card footer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+	list-style-type: none;
+    margin: 0;
+    text-align: center;
+	text-decoration: none;
+  }
+
+  .button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 10px;
+	color: white;
+	background-color: #253068;
+	text-align: center;
+	cursor: pointer;
+	width: 100%
+  }
+
+  .button p {
+	color: white;
+	font-size: 1rem;
+	font-family: lato;
+	font-style: bold;
+  }
+
+  .button a {
+	font-size: 1rem;
+	font-family: lato;
+	font-style: bold;
+    line-height: 1.5;
+	color: rgb(231, 231, 231);
+	text-decoration: none;
+}
+
+  .button:hover {
+	background-color: #6699CC;
+  }
+
+
+  h3{
+      color:#444;
+      
+  }
